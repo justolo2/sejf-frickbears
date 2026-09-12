@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sejf</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: green;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            background: greenyellow;
+            padding: 30px;
+            text-align: center;
+            width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            color: black;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: white;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+        .a{
+            color: green;
+        }
+        #error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>co robimy?</h2>
+
+        <input
+            type="text"
+            id="haslo"
+            placeholder="..."
+        >
+
+        <button onclick="sprawdzHaslo()">otwórz</button>
+
+        <div id="error"></div>
+    </div>
+    <script>
+        function sprawdzHaslo() {
+            const haslo = document.getElementById("haslo").value;
+
+            // Tutaj ustaw swoje hasło
+            const poprawneHaslo = "GAMING";
+
+            if (haslo === poprawneHaslo) {
+                window.location.href = "DON'T LOOK/lolbit purgatory.html";
+            } else {
+                document.getElementById("error").textContent =
+                    "nu uh";
+            }
+        }
+    </script>
+
+<a href="DON'T LOOK/nawet_o_tym_nie_myśl.html" class="a">=(OvO)=</a>
+</body>
+</html>
+
